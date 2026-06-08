@@ -2,31 +2,61 @@
 
 ## Project Overview
 
-This project demonstrates an end-to-end ETL pipeline using:
-
-- Azure Data Factory
-- Azure SQL Database
-- Python
-- Azure Blob Storage
+Designed and implemented an end-to-end ETL pipeline using Azure Data Factory, Azure SQL Database, Python, and Azure Blob Storage to automate data ingestion, transformation, and loading processes.
 
 ## Architecture
 
-Raw Data → Azure Blob Storage → Azure Data Factory → Azure SQL Database → Reporting Layer
+Raw CSV Files
+↓
+Azure Blob Storage
+↓
+Azure Data Factory
+↓
+Python Data Transformation
+↓
+Azure SQL Database
+↓
+Power BI Reporting
 
-## Features
+## Business Problem
 
-- Automated data ingestion
-- Data cleaning and transformation
-- SQL data loading
-- Reporting-ready dataset
+Organizations receive raw sales data from multiple sources and require automated processing for reporting and analytics.
 
-## Tech Stack
+## Solution
+
+This project automates:
+- Data ingestion
+- Data cleansing
+- Data transformation
+- Data loading
+- Reporting preparation
+
+## Technologies Used
 
 - Azure Data Factory
 - Azure SQL Database
-- Python
+- Azure Blob Storage
+- Python (Pandas)
 - SQL
 
-## Project Status
+## Key Achievements
 
-🚧 In Progress
+- Automated ETL workflow
+- Reduced manual data processing
+- Improved data quality through validation checks
+- Created reporting-ready datasets
+
+## Repository Structure
+
+datasets/
+sql/
+python/
+docs/
+screenshots/
+
+## Future Enhancements
+
+- Databricks integration
+- Incremental loading
+- Data quality monitoring
+- CI/CD deployment
